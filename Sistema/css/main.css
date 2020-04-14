@@ -1,0 +1,130 @@
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Raleway-Regular, sans-serif;
+}
+
+
+
+.div_principal{
+  width: 100%;  
+  min-height: 100vh;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #ebebeb;
+
+  text-align: center;
+}
+
+
+
+.div_formulario {
+  width: 560px;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  padding:55px 85px 55px 85px;
+
+}
+
+
+
+
+.formulario{
+  width: 100%;
+  text-align: left; 
+  
+}
+
+/*Formatos de SPAN*/
+
+.txt1 {
+  font-family: Raleway-SemiBold;
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.4;
+  text-transform: uppercase;
+  padding-bottom: 11px
+}
+
+
+.titulo {
+  font-family: Raleway-Medium;
+  font-size: 30px;
+  color: #555555;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+
+  width: 100%;
+  display: block;
+  padding-bottom: 32px;
+}
+
+
+
+.separar-b{
+  margin-bottom: 15px;
+}
+
+.separar-t{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*Input */
+
+.input {
+  font-family: Raleway-Medium;
+  color: #555555;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  background: transparent;
+  height: 55px;
+  padding: 0 25px 0 25px;
+
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+
+/*Button */
+
+.btn {
+  font-family: Raleway-Bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  display: inline-block ;
+
+
+
+  padding: 0 20px;
+  margin: 10px;
+  min-width: 150px;
+
+  height: 55px;
+  background-color: #333333;
+  border-radius: 27px;
+
+  transition: all 0.4s;
+  
+}
+
+.btn:hover {
+  background-color: #999999;
+}
+
