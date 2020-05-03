@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sistema de Examenes</title>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title> Sistema de examenes </title>
+        <meta name="description" content=" Loginproyecto"/>
+        <meta name="author" content="CCOMP 2020/>
+        <meta name="keywords" content="Login"/>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <div class="agrupar">
+        <h1 id="cabecera"> Login </h1>
+        <form action="validacion.php" method="post">
+        <input type="text" name="nombre" class="ids" placeholder="NOMBRE">
+        <input type="password"  name="passw"  class="ids" placeholder="CONTRASEÑA">
+       
 
-    
-    
-</head>
-
-
-<body>
-    
-            <form action="validacion.php" method="post">
-
-                <div>
-                    <span >
-                        Usuario
-                    </span>
-                </div>
-
-            
-                <input type="text" name="nombre" >
-                
-                <div>
-                    <span>
-                        Contraseña
-                    </span>
-                </div>
-
-                <input type="password" name="passw" >
-                
-                <input type="submit" value="Ingresar">
+        <a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           <input type="submit" value="INGRESAR" id="ingre">
            
-            </form>
-
            
+        </a>
 
+        </form>
         </div>
-    </div>
-    
-
-
-    
-</body>
-
-
-
-
+    </body>
 </html>
