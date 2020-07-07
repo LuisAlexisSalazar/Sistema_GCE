@@ -8,7 +8,7 @@
 
   
     <tr>
-       <th><a href="../index.html">Crear Periodo</a></th>
+       <th><a href="Periodo_Academico/Formulario_Periodo.php">Crear Periodo</a></th>
     </tr>
     
     <tr>

@@ -18,9 +18,11 @@
                 
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="./funciones_director.php">Inicio</a></li>
+
+                        <li><a href="funciones_director.php">Inicio</a></li>
 
                         <li><a href="../index.html">Salir</a></li>
+
                     </ul>
                 </div>
             </div>
