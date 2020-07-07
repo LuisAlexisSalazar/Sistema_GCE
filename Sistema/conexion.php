@@ -5,7 +5,7 @@
 $password = "";
 $user="root";
 $host="localhost";
-$bd = "sistema_gce";
+$bd = "insituto";
 
 
 try{

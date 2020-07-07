@@ -9,35 +9,39 @@ $contrasena=$_POST['passw'];
 
 
 //query
-$sql="SELECT r.nombre as nombre_rol FROM persona as p 
-        NATURAL JOIN credencial as c
-        INNER JOIN roles as r ON (r.id_credencial=c.id_credencial) 
-    WHERE p.nombre='$nombre' and c.contrasena='$contrasena'";
+
+
+$sql1="SELECT id_alumno as id FROM alumno as a
+    WHERE a.usuario='$nombre' and a.password='$contrasena'";
+
+$sql2="SELECT id_profesor as id FROM profesor as p
+WHERE p.usuario='$nombre' and p.password='$contrasena'";
+
+$sql3="SELECT id_director as id FROM director as d
+WHERE d.usuario='$nombre' and d.password='$contrasena'";
 
 
 
 //ejecucion de la query
-$resultado = $base_de_datos->query($sql);
+$resultado2 = $base_de_datos->query($sql1);
+$resultado3 = $base_de_datos->query($sql2);
+$resultado1 = $base_de_datos->query($sql3);
 
 //$filas=$resultado->rowCount();
 
-$registrados = $resultado->fetchAll(PDO::FETCH_OBJ);
 
-//recorrido por registro en si un "Cursor"
-foreach($registrados as $registro){
-  
-    if ($registro->nombre_rol == "director" )
-        header("location:pagina_director.html");
+    if ($resultado1->rowCount() > 0 )
+        header("location:Director/funciones_director.php");
     
 
-    elseif ($registro->nombre_rol == "alumno" ) 
-        header("location:pagina_alumno.html");
+    elseif ($resultado2->rowCount() > 0 )
+        header("location:Alumno/pagina_alumno.php");
     
 
-    elseif ($registro->nombre_rol == "profesor" )
-        header("location:pagina_profesor.html");
+    elseif ($resultado3->rowCount() > 0 )
+        header("location:Profesor/pagina_profesor.php");
     
-}
+
 
 
 echo '<script type="text/javascript">
