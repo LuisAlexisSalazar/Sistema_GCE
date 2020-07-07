@@ -28,7 +28,9 @@ body
 
 .agrupar
 {
-    border: 2px solid #020024;
+    border-radius: 10px;
+
+    /*border: 2px solid #020024;*/
     /* El margen es para lo que esta al exterior pero el padding es para lo que esta adentro*/
     /*background: #E3CBB6;*/
 
@@ -43,7 +45,7 @@ body
 #cabecera
 {
     color: #f7f5f0;
-
+    border-radius: 15px;
     /*color gradiente*/
     /*background: rgb(227,203,182);
     background: linear-gradient(146deg, rgba(227,203,182,1) 0%, rgba(227,203,182,1) 2%, rgba(227,203,182,1) 4%, rgba(32,77,87,1) 94%);*/
@@ -62,6 +64,7 @@ body
 
 .ids
 {
+    border-radius: 150px;
     display: block;
     width: 250px;
     margin-top: 50px;
