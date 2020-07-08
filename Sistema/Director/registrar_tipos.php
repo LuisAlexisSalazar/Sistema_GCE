@@ -8,11 +8,11 @@
 
   
     <tr>
-       <th><a href="../index.html">Registrar Alumno/Asistente</a></th>
+       <th><a href="Alumno_reg/registrar_alu.php">Registrar Alumno/Asistente</a></th>
     </tr>
     
     <tr>
-        <th><a href="../index.html">Registrar Profesor</a></th>
+        <th><a href="Profesor_reg/registrar_pro.php">Registrar Profesor</a></th>
     </tr>
 
   

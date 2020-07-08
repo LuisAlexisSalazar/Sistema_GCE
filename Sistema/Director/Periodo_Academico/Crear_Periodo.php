@@ -21,7 +21,7 @@ $fin = date('Y-m-d',$fin); //Lo comvierte a formato de fecha en MySQL
 
 $sql="INSERT INTO periodo (inicio, final, nombre) VALUES ('$inicio','$fin','$nombre')";
 
-//$resultado = $base_de_datos->query($sql);
+$resultado = $base_de_datos->query($sql);
 
 
 echo '<script type="text/javascript">
